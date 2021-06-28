@@ -7,11 +7,21 @@ async function fetchSources() {
   const data = await res.json()
 
   if (res.ok) {
-    repositories.add(...data)
+    repositories.add(...data.sort(sortByUpdatedAt))
     return data
   } else {
     throw new Error(data)
   }
+}
+
+/**
+ * Sort function, by update date (desc)
+ * @param a
+ * @param b
+ * @return {number}
+ */
+function sortByUpdatedAt(a, b) {
+  return Date.parse(b.updatedAt) - Date.parse(a.updatedAt)
 }
 
 /**
