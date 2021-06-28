@@ -10,4 +10,4 @@ You can post an issue or submit a PR that edits the `repositories.json` file.
 
 It takes the [repository.json](https://github.com/ubermanu/flock/blob/main/repositories.json) file and fetch each repo information using the [GitHub GraphQL API](https://github.com/octokit/graphql.js).
 
-The update occurs every 5 minutes.
+The update occurs every 15 minutes.
