@@ -1,4 +1,4 @@
-name: Deploy to GitHub Pages every 15 min
+name: Deploy to gh-pages
 
 on:
   schedule:
