@@ -10,6 +10,8 @@
     "dev": "vite",
     "build": "vite build",
     "sources": "node bin/generate-sources.mjs",
+    "deploy": "gh-pages -t -d dist",
+    "predeploy": "pnpm run sources && vite build --base=/flock/",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "dependencies": {
