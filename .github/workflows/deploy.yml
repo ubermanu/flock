@@ -24,7 +24,7 @@ jobs:
       - run: pnpm sources
         env:
           FLOCK_GITHUB_ACCESS_TOKEN: ${{ secrets.FLOCK_GITHUB_ACCESS_TOKEN }}
-      - run: pnpm build
+      - run: pnpm build -- --base=/flock/
 
       - uses: JamesIves/github-pages-deploy-action@4.1.4
         with:
