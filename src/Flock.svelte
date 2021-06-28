@@ -1,6 +1,7 @@
 <script>
   import Card from './Card.svelte'
   import repositories, { findInNameAndDescription, promise } from './repositories.mjs'
+  import FlappingBirds from './FlappingBirds.svelte'
 
   let search = []
 
@@ -10,6 +11,7 @@
 </script>
 
 <main>
+  <FlappingBirds />
   <div class="container"></div>
   <div class="container p-6">
     <h1 class="title is-3">Flock</h1>
@@ -75,5 +77,6 @@
 
     .footer {
         margin-top: auto;
+        background: none;
     }
 </style>
