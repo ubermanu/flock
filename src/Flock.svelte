@@ -28,7 +28,7 @@
           <input class="input" type="text" placeholder="Find a package...">
         </div>
         <div class="control">
-          <button class="button is-info">
+          <button class="button is-info" aria-label="Search">
             <i class="fa fa-search"></i>
           </button>
         </div>
@@ -38,7 +38,7 @@
   <div class="container is-fluid p-6">
     {#await promise}
       <div class="fa-3x has-text-centered">
-        <i class="fas fa-spinner fa-pulse" aria-labelledby="Loading repository data, hang tight"></i>
+        <i class="fas fa-spinner fa-pulse" aria-label="Loading repository data, hang tight"></i>
       </div>
     {:then sources}
       <div class="grid">
