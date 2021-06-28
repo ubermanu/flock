@@ -21,6 +21,11 @@ jobs:
           version: 6.2.5
 
       - run: pnpm i
-      - run: pnpm cron
+      - run: pnpm sources
         env:
           FLOCK_GITHUB_ACCESS_TOKEN: ${{ secrets.FLOCK_GITHUB_ACCESS_TOKEN }}
+
+      - uses: JamesIves/github-pages-deploy-action@4.1.4
+        with:
+          branch: gh-pages
+          folder: public
