@@ -1,6 +1,10 @@
 <script>
-  import data from './sources.json'
   import Card from './Card.svelte'
+
+  let sources = []
+  fetch('./sources.json')
+    .then(res => res.json())
+    .then(data => sources = data)
 </script>
 
 <main>
@@ -21,7 +25,7 @@
   </div>
   <div class="container is-fluid p-6">
     <div class="grid">
-      {#each data as repository}
+      {#each sources as repository}
         <Card {repository} />
       {/each}
     </div>

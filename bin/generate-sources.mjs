@@ -65,11 +65,11 @@ fragment repoProperties on Repository {
  */
 const res = await graphql(query, {
   headers: {
-    authorization: `token ${process.env.APP_GITHUB_TOKEN}`
+    authorization: `token ${process.env.FLOCK_GITHUB_ACCESS_TOKEN}`
   }
 })
 
 /**
  * Writes the query results into a json file
  */
-writeFileSync('./src/sources.json', JSON.stringify(Object.values(res)))
+writeFileSync('./public/sources.json', JSON.stringify(Object.values(res)))

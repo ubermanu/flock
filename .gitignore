@@ -2,4 +2,4 @@
 .env
 dist
 node_modules
-src/sources.json
+public/sources.json
