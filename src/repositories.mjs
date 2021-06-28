@@ -34,7 +34,8 @@ export let promise = fetchSources()
  * Return a filtered list of repos
  */
 export function findInNameAndDescription(text) {
-  return repositories.values().filter(item => item.nameWithOwner.includes(text) || item.description.includes(text))
+  const rx = new RegExp(text, 'i')
+  return repositories.values().filter(item => rx.test(item.nameWithOwner) || rx.test(item.description))
 }
 
 /**
