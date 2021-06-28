@@ -1,4 +1,4 @@
-name: Update sources data
+name: Deploy to GitHub Pages every 15 min
 
 on:
   schedule:
