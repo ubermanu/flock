@@ -21,17 +21,17 @@
       A package repository for <a href="https://github.com/wren-lang/wren/" target="_blank"><i
       class="fab fa-github"></i> Wren</a>
     </p>
-    <form class="form" method="post">
+    <div class="form">
       <div class="field">
         <div class="control has-icons-right">
-          <input class="input" type="text" name="q" placeholder="Find a package..."
+          <input class="input" type="text" placeholder="Find a package..."
                  on:keyup={handleKeyUp}>
           <span class="icon is-small is-right">
             <i class="fas fa-search"></i>
           </span>
         </div>
       </div>
-    </form>
+    </div>
   </div>
   <div class="container is-fluid p-6">
     {#await promise}
