@@ -5,7 +5,7 @@
   let search = []
 
   function handleKeyUp(ev) {
-    $: search = findInNameAndDescription(ev.target.value)
+    search = findInNameAndDescription(ev.target.value)
   }
 </script>
 
