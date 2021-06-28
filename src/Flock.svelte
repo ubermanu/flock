@@ -69,6 +69,11 @@
         min-height: 100vh;
     }
 
+    h1 {
+        font-family: "Sanchez", "Helvetica", serif;
+        letter-spacing: 0.12rem;
+    }
+
     .grid {
         display: grid;
         grid-template-columns: repeat(auto-fill, minmax(15rem, 1fr));
