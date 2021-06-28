@@ -5,6 +5,7 @@ specifiers:
   '@octokit/graphql': ^4.6.4
   '@sveltejs/vite-plugin-svelte': ^1.0.0-next.11
   bulma: ^0.9.3
+  bulma-prefers-dark: ^0.1.0-beta.0
   dotenv: ^10.0.0
   gh-pages: ^3.2.3
   prettier: ^2.3.2
@@ -14,6 +15,7 @@ specifiers:
 dependencies:
   '@fortawesome/fontawesome-free': 5.15.3
   bulma: 0.9.3
+  bulma-prefers-dark: 0.1.0-beta.0
   svelte: 3.38.3
 
 devDependencies:
@@ -141,6 +143,10 @@ packages:
       balanced-match: 1.0.2
       concat-map: 0.0.1
     dev: true
+
+  /bulma-prefers-dark/0.1.0-beta.0:
+    resolution: {integrity: sha512-EeDW8pQrkYEOXo2l3WykfghbUzi8jlQWGI+Cu2HwmXwQHMcoGF6yiKYCNShttN+8z3atq8fLWh3B7pqXUV4fBA==}
+    dev: false
 
   /bulma/0.9.3:
     resolution: {integrity: sha512-0d7GNW1PY4ud8TWxdNcP6Cc8Bu7MxcntD/RRLGWuiw/s0a9P+XlH/6QoOIrmbj6o8WWJzJYhytiu9nFjTszk1g==}
