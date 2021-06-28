@@ -3,10 +3,12 @@
   import repositories, { findInNameAndDescription, promise } from './repositories.mjs'
   import FlappingBirds from './FlappingBirds.svelte'
 
-  let search = []
+  let search = ''
+  let results = []
 
   function handleKeyUp(ev) {
-    search = findInNameAndDescription(ev.target.value)
+    search = ev.target.value
+    results = findInNameAndDescription(search)
   }
 </script>
 
@@ -39,7 +41,7 @@
     {:then _}
       <div class="grid">
         {#if search.length > 0}
-          {#each search as repository}
+          {#each results as repository}
             <Card {repository} />
           {/each}
         {:else}
