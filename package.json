@@ -12,6 +12,7 @@
     "sources": "node bin/generate-sources.mjs",
     "deploy": "gh-pages -d dist",
     "predeploy": "pnpm sources && vite build --base=/flock/",
+    "cron": "pnpm sources && gh-pages -a -d dist",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "dependencies": {
