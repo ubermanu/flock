@@ -26,7 +26,7 @@
     }
 
     .bird {
-        background: url('./images/wren-2x.png');
+        background: url('./images/flapping-wren.svg');
         background-size: auto 100%;
         width: 50px;
         height: 50px;
@@ -44,7 +44,7 @@
 
         transform: scale(0.6) translateY(-20vh);
         transform-origin: top left;
-        opacity: 0.15;
+        opacity: 0.1;
 
         position: relative;
         top: 10%;
