@@ -1,0 +1,20 @@
+[
+  "brandly/wren-json",
+  "brandly/wren-pure",
+  "datatypevoid/wren-enum",
+  "datatypevoid/wren-toml",
+  "datatypevoid/wren-warble",
+  "EvanHahn/wren-please",
+  "EvanHahn/wren-querystring",
+  "EvanHahn/wren-vector3d",
+  "gsmaverick/wren-colors",
+  "gsmaverick/wren-test",
+  "munificent/wrenalyzer",
+  "seanohue/wren-beak",
+  "minirop/wren-helpers",
+  "ruby0x1/wren-astar",
+  "domeengine/dome",
+  "BrianOtto/Recto",
+  "nanaian/wren-args",
+  "NinjasCL/chercan"
+]
