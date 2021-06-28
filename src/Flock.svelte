@@ -25,13 +25,22 @@
       <div class="field">
         <div class="control has-icons-right">
           <input class="input" type="text" placeholder="Find a package..."
-                 on:keyup={handleKeyUp}>
+                 on:keyup={handleKeyUp} class:is-danger={search.length && !results.length}>
           <span class="icon is-small is-right">
             <i class="fas fa-search"></i>
           </span>
         </div>
       </div>
     </div>
+    {#if search.length}
+      <p class="pt-2">
+        {#if results.length === 0}
+          <small class="has-text-danger">No package found :(</small>
+        {:else}
+          <small>Found {results.length} result{results.length > 1 ? 's' : ''}!</small>
+        {/if}
+      </p>
+    {/if}
   </div>
   <div class="container is-fluid p-6">
     {#await promise}
@@ -40,7 +49,7 @@
       </div>
     {:then _}
       <div class="grid">
-        {#if search.length > 0}
+        {#if search.length}
           {#each results as repository}
             <Card {repository} />
           {/each}
