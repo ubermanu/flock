@@ -7,8 +7,12 @@
     <a href="{repository.url}" target="_blank"><strong>{repository.nameWithOwner}</strong></a>
     <p class="card-description pt-1">{repository.description}</p>
     <div class="card-information pt-1">
-      <small><i class="fas fa-star"></i>&nbsp;{repository.stargazerCount}</small>
-      <small><i class="fa fa-code-branch"></i>&nbsp;{repository.forkCount}</small>
+      {#if repository.stargazerCount}
+        <small><i class="fas fa-star"></i> {repository.stargazerCount}</small>
+      {/if}
+      {#if repository.forkCount}
+        <small><i class="fa fa-code-branch"></i> {repository.forkCount}</small>
+      {/if}
     </div>
   </div>
 </div>
