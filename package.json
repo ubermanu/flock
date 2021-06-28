@@ -19,7 +19,8 @@
     "@fortawesome/fontawesome-free": "^5.15.3",
     "bulma": "^0.9.3",
     "bulma-prefers-dark": "^0.1.0-beta.0",
-    "svelte": "^3.38.3"
+    "svelte": "^3.38.3",
+    "svelte-depot": "^0.9.4"
   },
   "devDependencies": {
     "@octokit/graphql": "^4.6.4",

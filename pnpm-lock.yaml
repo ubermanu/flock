@@ -10,6 +10,7 @@ specifiers:
   gh-pages: ^3.2.3
   prettier: ^2.3.2
   svelte: ^3.38.3
+  svelte-depot: ^0.9.4
   vite: ^2.3.8
 
 dependencies:
@@ -17,6 +18,7 @@ dependencies:
   bulma: 0.9.3
   bulma-prefers-dark: 0.1.0-beta.0
   svelte: 3.38.3
+  svelte-depot: 0.9.4
 
 devDependencies:
   '@octokit/graphql': 4.6.4
@@ -369,6 +371,10 @@ packages:
       p-locate: 4.1.0
     dev: true
 
+  /lodash-es/4.17.21:
+    resolution: {integrity: sha512-mKnC+QJ9pWVzv+C4/U3rRsHapFfHvQFoFB92e52xeyGMcX6/OlIl78je1u8vePzYZSkkogMPJ2yjxxsb89cxyw==}
+    dev: false
+
   /lodash/4.17.21:
     resolution: {integrity: sha512-v2kDEe57lecTulaDIuNTPy3Ry4gLGJ6Z1O3vE1krgXZNrsQ+LFTGHVxVjcXPs17LhbZVGedAJv8XZ1tvj5FvSg==}
     dev: true
@@ -532,6 +538,14 @@ packages:
       has-flag: 4.0.0
     dev: true
 
+  /svelte-depot/0.9.4:
+    resolution: {integrity: sha512-e3I8T7A76dvyANWZd7hGX81kY8z9TkeBDMHmHhRgWL2O3FIh4FY2h27cV9FsvdXPbwsNepDz1GAR8j7VDtYK0w==}
+    dependencies:
+      lodash-es: 4.17.21
+      svelte: 3.38.3
+      uuid-random-es: 2.1.1
+    dev: false
+
   /svelte-hmr/0.14.4_svelte@3.38.3:
     resolution: {integrity: sha512-kItFF7vqzStckSigoFmMnxJpTOdB9TWnQAW6Js+yAB4277tLbJIIE5KBlGHNmJNpA7MguqidsPB27Uw5UzQPCA==}
     peerDependencies:
@@ -560,6 +574,10 @@ packages:
     resolution: {integrity: sha512-rBJeI5CXAlmy1pV+617WB9J63U6XcazHHF2f2dbJix4XzpUF0RS3Zbj0FGIOCAva5P/d/GBOYaACQ1w+0azUkg==}
     engines: {node: '>= 4.0.0'}
     dev: true
+
+  /uuid-random-es/2.1.1:
+    resolution: {integrity: sha512-JUGIsQZb+1O1ETxY4/p/S0rsFGPGgscECbzPXN+Xeqnlz3XmqMR3OzC64bMQ8htxDFjvuA8Gl9y3Ve/l8fQEWg==}
+    dev: false
 
   /vite/2.3.8:
     resolution: {integrity: sha512-QiEx+iqNnJntSgSF2fWRQvRey9pORIrtNJzNyBJXwc+BdzWs83FQolX84cTBo393cfhObrtWa6180dAa4NLDiQ==}
