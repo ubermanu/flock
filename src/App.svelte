@@ -1,7 +1,6 @@
 <script>
-  import repositories from './sources.json'
-
-  console.log(repositories)
+  import data from './sources.json'
+  import Card from './Card.svelte'
 </script>
 
 <main>
@@ -20,14 +19,10 @@
       </div>
     </div>
   </div>
-  <div class="container">
+  <div class="container is-fluid p-6">
     <div class="grid">
-      {#each repositories as repo}
-        <div class="card">
-          <div class="card-content">
-            {repo.name}
-          </div>
-        </div>
+      {#each data as repository}
+        <Card {repository} />
       {/each}
     </div>
   </div>
@@ -48,7 +43,8 @@
 
     .grid {
         display: grid;
-        grid-template-columns: repeat(auto-fill, minmax(10rem, 1fr));
+        grid-template-columns: repeat(auto-fill, minmax(15rem, 1fr));
+        grid-gap: 1.4rem;
     }
 
     .footer {

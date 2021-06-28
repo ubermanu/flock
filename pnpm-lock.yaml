@@ -1,6 +1,7 @@
 lockfileVersion: 5.3
 
 specifiers:
+  '@fortawesome/fontawesome-free': ^5.15.3
   '@octokit/graphql': ^4.6.4
   '@sveltejs/vite-plugin-svelte': ^1.0.0-next.11
   bulma: ^0.9.3
@@ -11,6 +12,7 @@ specifiers:
   vite: ^2.3.8
 
 dependencies:
+  '@fortawesome/fontawesome-free': 5.15.3
   bulma: 0.9.3
   svelte: 3.38.3
 
@@ -23,6 +25,12 @@ devDependencies:
   vite: 2.3.8
 
 packages:
+
+  /@fortawesome/fontawesome-free/5.15.3:
+    resolution: {integrity: sha512-rFnSUN/QOtnOAgqFRooTA3H57JLDm0QEG/jPdk+tLQNL/eWd+Aok8g3qCI+Q1xuDPWpGW/i9JySpJVsq8Q0s9w==}
+    engines: {node: '>=6'}
+    requiresBuild: true
+    dev: false
 
   /@octokit/endpoint/6.0.12:
     resolution: {integrity: sha512-lF3puPwkQWGfkMClXb4k/eUT/nZKQfxinRWJrdZaJO85Dqwo/G0yOC434Jr2ojwafWJMYqFGFa5ms4jJUgujdA==}
